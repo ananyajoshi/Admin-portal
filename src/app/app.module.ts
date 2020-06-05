@@ -8,6 +8,9 @@ import { HomeComponent } from './home/home.component';
 import { RouterModule , Routes } from '@angular/router';
 import {HttpClientModule} from '@angular/common/http';
 import {NgbdAlertBasic} from '../app/alert/alert';
+import { ListComponent } from './list/list.component';
+import { ListService } from './list/list.service';
+
 const appRoutes: Routes = [
   {
       path:'',
@@ -30,6 +33,7 @@ const appRoutes: Routes = [
     HeaderComponentComponent,
     HomeComponent,
     NgbdAlertBasic,
+    ListComponent
   ],
   imports: [
     BrowserModule,
@@ -37,7 +41,8 @@ const appRoutes: Routes = [
     RouterModule.forRoot(appRoutes)
   ],
   providers: [
-    LoginService
+    LoginService,
+    ListService
   ],
   bootstrap: [AppComponent]
 })
