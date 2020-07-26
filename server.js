@@ -24,8 +24,8 @@ mysqlConnection.connect((err) => {
 });
 
 const s3 = new AWS.S3({
-    accessKeyId:'AKIAIA5HRM44AXOUKRFA',
-    secretAccessKey:'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'
+    accessKeyId:'',
+    secretAccessKey:''
     });
 
 
